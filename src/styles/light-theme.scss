@@ -1,0 +1,72 @@
+body.light {
+  background-color: $light-background-color;
+  text-shadow: $light-text-shadow;
+
+  // home
+  .home-header {
+    color: $dark-gray;
+  }
+
+  .bio {
+    .author-name-content {
+      background-color: $light-category-border-color;
+    }
+    .author-introduction {
+      color: $middle-gray;
+    }
+    a {
+      color: $light-link-color;
+    }
+  }
+
+  .category-container {
+    border-top: 1px solid $light-category-border-color;
+    border-bottom: 1px solid $light-category-border-color;
+    border-right: 6px solid $light-category-border-color;
+    border-left: 6px solid $light-category-border-color;
+    background-color: $light-category-background-color;
+    .item {
+      border: 1px solid $light-category-border-color;
+      background-color: $light-category-item-color;
+      -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+      a {
+        color: $light-category-text-color;
+      }
+      &[aria-selected='true'] {
+        border: 2px solid $light-category-highlight-border-color;
+        font-weight: bolder;
+      }
+      &[aria-selected='true'] a {
+        color: $light-category-highlight-text-color;
+      }
+    }
+  }
+
+  .thumbnail {
+    h3 {
+      color: $dark-gray;
+    }
+    p {
+      color: $middle-gray;
+    }
+    &:hover {
+      text-shadow: $light-hover-text-shadow;
+    }
+  }
+
+  .footer {
+    color: $light-gray;
+    a {
+      color: $dark-gray;
+    }
+  }
+
+  // post
+  .navigator {
+    a {
+      background-color: $post-background-color;
+      color: $post-link-color;
+    }
+  }
+}

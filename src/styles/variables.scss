@@ -1,0 +1,57 @@
+// app
+$theme-gradient: linear-gradient(72deg, #291e95, #cc007a);
+$top-header-text-color: #fff;
+
+/**
+ * @light theme
+ */
+
+// body
+$light-background-color: #fff;
+$light-text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
+$light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+
+// index
+$dimmed-color: #eef5db;
+$light-link-color: #000080;
+$dark-gray: #333;
+$middle-gray: #7d7d7d;
+$light-gray: #aaa;
+
+// blog-templates
+$post-link-color: #cc007a;
+$post-background-color: #fceff7;
+
+// code
+$inline-dimmed-color: #ece5f1;
+$inline-text-color: #4b2043;
+
+// category
+$light-category-border-color: #ecf0f2;
+$light-category-highlight-border-color: #909da1;
+$light-category-background-color: #f4f7f8;
+$light-category-text-color: #666;
+$light-category-highlight-text-color: #636c6e;
+$light-category-item-color: #fff;
+
+/**
+ * @dark theme
+ */
+$dark-background-color: #282c35;
+$dark-link-color: #bb72ec;
+
+$dark-lightest-font-color: #fff;
+$dark-light-font-color: #eeeeee;
+$dark-middle-font-color: #d8d7d7;
+
+$dark-text-shadow: 0 0 0.1px rgba(255, 255, 255, 0.3);
+$dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+
+$dark-category-item-color: #282c35;
+$dark-category-background-color: #24272c;
+
+$dark-category-border-color: rgb(56, 54, 54);
+$dark-category-text-color: #d8d7d7;
+
+$dark-category-highlight-border-color: #666;
+$dark-category-highlight-text-color: #fff;

@@ -1,0 +1,47 @@
+.social-share {
+  text-align: right;
+}
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 17px;
+  border: none;
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 4px;
+
+  .service-label {
+    font-size: 12px;
+    padding-right: 4px;
+  }
+}
+
+.resp-sharing-button {
+  height: 33px;
+  border-radius: 6px;
+  transition: 25ms ease-out;
+  padding: 3px 8px 3px 10px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top;
+}
+
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none;
+}
+
+.resp-sharing-button__icon--solid {
+  fill: #fff;
+  stroke: none;
+}

@@ -1,0 +1,11 @@
+@import '../styles/variables.scss';
+@import '../styles/light-theme.scss';
+@import '../styles/dark-theme.scss';
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: $light-background-color;
+  -webkit-text-size-adjust: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s, color 0.2s;
+}

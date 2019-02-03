@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.category-container {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  line-height: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  -ms-overflow-style: none; // IE 10+
+  overflow: -moz-scrollbars-none; // Firefox
+  z-index: 1;
+  padding: 6px 20px;
+
+  .item {
+    display: inline-block;
+    margin: 0.25rem 6px 0.25rem 0;
+    border-radius: 15px;
+    white-space: normal;
+    box-sizing: border-box;
+
+    a {
+      display: block;
+      padding: 14px 16px 16px 16px;
+      font-size: 13px;
+      box-sizing: border-box;
+    }
+  }
+
+  .item:last-child {
+    margin-right: 0;
+  }
+}
+
+.category-container::-webkit-scrollbar {
+  display: none; // Safari and Chrome
+}

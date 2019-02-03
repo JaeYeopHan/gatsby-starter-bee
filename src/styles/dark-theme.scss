@@ -1,0 +1,73 @@
+body.dark {
+  background-color: $dark-background-color;
+  text-shadow: $dark-text-shadow;
+  color: $dark-light-font-color;
+
+  // home
+  .home-header {
+    color: $dark-light-font-color;
+  }
+
+  .bio {
+    .author-name-content {
+      background-color: $dark-category-border-color;
+    }
+    .author-introduction {
+      color: $dark-middle-font-color;
+    }
+    a {
+      color: $dark-link-color;
+    }
+  }
+
+  .category-container {
+    border-top: 1px solid $dark-category-border-color;
+    border-bottom: 1px solid $dark-category-border-color;
+    border-right: 6px solid $dark-category-border-color;
+    border-left: 6px solid $dark-category-border-color;
+    background-color: $dark-category-background-color;
+    .item {
+      border: 1px solid $dark-category-border-color;
+      background-color: $dark-category-item-color;
+      -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
+      a {
+        color: $dark-category-text-color;
+      }
+      &[aria-selected='true'] {
+        border: 2px solid $dark-category-highlight-border-color;
+        font-weight: bolder;
+      }
+      &[aria-selected='true'] a {
+        color: $dark-category-highlight-text-color;
+      }
+    }
+  }
+
+  .thumbnail {
+    h3 {
+      color: $dark-light-font-color;
+    }
+    p {
+      color: $dark-middle-font-color;
+    }
+    &:hover {
+      text-shadow: $dark-hover-text-shadow;
+    }
+  }
+
+  .footer {
+    color: $dark-middle-font-color;
+    a {
+      color: $dark-lightest-font-color;
+    }
+  }
+
+  // post
+  .navigator {
+    a {
+      background-color: $post-background-color;
+      color: $post-link-color;
+    }
+  }
+}

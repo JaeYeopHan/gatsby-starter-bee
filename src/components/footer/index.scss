@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  padding-top: 52px;
+  text-align: center;
+  font-size: 12px;
+
+  a {
+    text-decoration: none !important;
+  }
+}
