@@ -6,7 +6,7 @@
 
 ## Demo
 
-- [FELOG](http://jbee.io)
+- [JBEE.io](http://jbee.io)
 
 ## 😎 Quick Start
 
