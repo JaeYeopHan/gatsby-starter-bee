@@ -1,6 +1,6 @@
 ---
 title: 'Welcome Bee starter'
-date: 2019-2-1 16:21:13
+date: 2019-2-6 16:21:13
 category: 'development'
 ---
 
@@ -34,6 +34,10 @@ class Foo extends React.Component {
 }
 ```
 
+_code_
+
+![](./images/code_example.png)
+
 ## 2. Support Markdown (h2)
 
 1. With [Noto Sans](https://fonts.google.com/specimen/Noto+Sans) font
@@ -49,6 +53,6 @@ class Foo extends React.Component {
 
 **bold** _italic_
 
-## Support light/dark mode
+## 3. Support light/dark mode
 
 ## 4. Support social sharing feature
