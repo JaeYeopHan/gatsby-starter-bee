@@ -6,7 +6,23 @@ category: 'development'
 
 ![](./images/hello.png)
 
-## 1. Code highlighting
+Welcome, Gatsby! This starter is full-package for your new blog!
+
+## 1. Support Three frontmatter
+
+```
+---
+title: 'Welcome Bee starter'
+date: 2019-2-6 16:21:13
+category: 'development'
+---
+```
+
+1. title
+2. date
+3. category
+
+## 2. Code highlighting
 
 1. With [Fira Code](https://github.com/tonsky/FiraCode) font
 2. Support highlighting with [prism](https://github.com/PrismJS/prism)
@@ -38,7 +54,7 @@ _code_
 
 ![](./images/code_example.png)
 
-## 2. Support Markdown (h2)
+## 3. Support Markdown (h2)
 
 1. With [Noto Sans](https://fonts.google.com/specimen/Noto+Sans) font
 2. Support header anchoring
@@ -53,6 +69,35 @@ _code_
 
 **bold** _italic_
 
-## 3. Support light/dark mode
+## 4. Support emoji :rocket:
 
-## 4. Support social sharing feature
+Based on [emojione](https://github.com/emojione/emojione) :pray:
+
+## 5. Support light/dark mode
+
+## 6. Support social sharing feature
+
+1. Twitter
+2. Facebook
+
+### Bonus, `Buy me a coffee` button
+
+Set, `buyMeACoffeeId` of `gatsby-meta-config.js`
+
+## 7. Comments feature
+
+You can add comments feature by selecting one of them.
+
+- [ ] Disqus
+- [ ] utterances
+
+## 8. Other features of this template
+
+1. You can add resume to `/about`
+2. Lazy rendering
+3. Scroll restoration
+4. Categorize posts
+5. Offline caching with service worker (based gatsby)
+6. Support GA(Google Analytics)
+
+> Let's Start! [Go](https://github.com/JaeYeopHan/gatsby-starter-bee)
