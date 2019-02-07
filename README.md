@@ -1,4 +1,4 @@
-![](./screenshot.png)
+![](./assets/screenshot-pc.png)
 
 # gatsby-starter-bee
 
