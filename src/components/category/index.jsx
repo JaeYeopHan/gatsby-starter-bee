@@ -9,7 +9,8 @@ export const Category = ({ category, selectCategory, currentCategory }) => {
   return (
     <ul
       className="category-container"
-      role="tablist"
+      role="list"
+      aria-role=""
       id="category"
       style={{
         margin: `0 -${rhythm(3 / 4)}`,
@@ -17,9 +18,10 @@ export const Category = ({ category, selectCategory, currentCategory }) => {
     >
       <li
         className="item"
-        aria-selected={currentCategory === CATEGORY_TYPE.ALL ? 'true' : ''}
+        role="listitem"
+        aria-selected={currentCategory === CATEGORY_TYPE.ALL ? 'true' : 'false'}
       >
-        <a href="" onClick={e => selectCategory(e, CATEGORY_TYPE.ALL)}>
+        <a href="#" onClick={e => selectCategory(e, CATEGORY_TYPE.ALL)}>
           All
         </a>
       </li>
@@ -27,7 +29,8 @@ export const Category = ({ category, selectCategory, currentCategory }) => {
         <li
           key={idx}
           className="item"
-          aria-selected={currentCategory === item ? 'true' : ''}
+          role="listitem"
+          aria-selected={currentCategory === item ? 'true' : 'false'}
         >
           <a href="#" onClick={e => selectCategory(e, item)}>
             {item}

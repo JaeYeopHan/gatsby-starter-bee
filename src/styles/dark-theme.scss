@@ -64,10 +64,14 @@ body.dark {
   }
 
   // post
+  blockquote {
+    border-left: 4px solid rgba(255, 255, 255, 0.822);
+  }
+
   .navigator {
     a {
-      background-color: $post-background-color;
-      color: $post-link-color;
+      background-color: $navigator-background-color;
+      color: $navigator-text-color;
     }
   }
 }

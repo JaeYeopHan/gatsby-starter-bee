@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import * as Elements from '../components/elements'
@@ -15,43 +15,37 @@ import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
 
-export default class BlogPostTemplate extends React.Component {
-  componentDidMount() {
+export default ({ data, pageContext, location }) => {
+  useEffect(() => {
     ScrollManager.init()
-  }
+    return () => ScrollManager.destroy()
+  })
 
-  componentWillUnmount() {
-    ScrollManager.destroy()
-  }
+  const post = data.markdownRemark
+  const metaData = data.site.siteMetadata
+  const { title, comment, siteUrl, author } = metaData
+  const { disqusShortName, utterances } = comment
 
-  render() {
-    const { data, pageContext, location } = this.props
-    const post = data.markdownRemark
-    const metaData = data.site.siteMetadata
-    const { title, comment, siteUrl, author } = metaData
-    const { disqusShortName, utterances } = comment
-
-    return (
-      <Layout location={location} title={title}>
-        <Head title={post.frontmatter.title} description={post.excerpt} />
-        <PostTitle title={post.frontmatter.title} />
-        <PostContainer html={post.html} />
-        <SocialShare title={post.frontmatter.title} author={author} />
-        <Elements.Hr />
-        <Bio />
-        <PostNavigator pageContext={pageContext} />
-        {!!disqusShortName && (
-          <Disqus
-            post={post}
-            shortName={disqusShortName}
-            siteUrl={siteUrl}
-            slug={pageContext.slug}
-          />
-        )}
-        {!!utterances && <Utterences repo={utterances} />}
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={title}>
+      <Head title={post.frontmatter.title} description={post.excerpt} />
+      <PostTitle title={post.frontmatter.title} />
+      <PostContainer html={post.html} />
+      <SocialShare title={post.frontmatter.title} author={author} />
+      <Elements.Hr />
+      <Bio />
+      <PostNavigator pageContext={pageContext} />
+      {!!disqusShortName && (
+        <Disqus
+          post={post}
+          shortName={disqusShortName}
+          siteUrl={siteUrl}
+          slug={pageContext.slug}
+        />
+      )}
+      {!!utterances && <Utterences repo={utterances} />}
+    </Layout>
+  )
 }
 
 export const pageQuery = graphql`

@@ -1,98 +1,89 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import { ThumbnailItem } from '../components/thumbnail-item'
 import { CATEGORY_TYPE } from '../constants'
 import * as IOManager from '../utils/visible'
 import * as Storage from '../utils/storage'
+import * as Dom from '../utils/dom'
 
 const BASE_LINE = 80
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props)
+let ticking = false
 
-    this.totalCount = props.posts.length
-    this.countOfInitialPost = props.countOfInitialPost
+function getDistance(degree) {
+  return Dom.getDocumentHeight() - degree
+}
 
-    const savedCount = Storage.getState()
-
-    this.state = {
-      currentCount: savedCount || 1,
-    }
-
-    this.handleScroll = this.handleScroll.bind(this)
-  }
-
-  componentDidMount() {
-    window.addEventListener(`scroll`, this.handleScroll, { passive: false })
+export default ({ posts, countOfInitialPost, currentCategory }) => {
+  useEffect(() => {
+    window.addEventListener(`scroll`, handleScroll, { passive: false })
     IOManager.init()
-  }
 
-  componentWillUnmount() {
-    Storage.setState(this.state.currentCount)
-    window.removeEventListener(`scroll`, this.handleScroll, { passive: false })
-    IOManager.destroy()
-  }
-
-  handleScroll() {
-    if (!this.ticking) {
-      this.ticking = true
-      requestAnimationFrame(() => this.updateStatus())
+    return () => {
+      window.removeEventListener(`scroll`, handleScroll, {
+        passive: false,
+      })
+      IOManager.destroy()
+      Storage.setState(prevCount.current)
     }
-  }
+  }, [])
 
-  updateStatus() {
-    const distanceToBottom =
-      document.documentElement.offsetHeight -
-      (window.scrollY + window.innerHeight)
-    const isTriggerPosition = distanceToBottom < BASE_LINE
+  useEffect(
+    () => {
+      IOManager.refreshObserver()
+    },
+    [currentCategory]
+  )
 
-    if (!isTriggerPosition) {
-      this.ticking = false
+  const [currentCount, setCurrentCount] = useState(Storage.getState() || 1)
+  const prevCount = useRef()
+
+  useEffect(
+    () => {
+      prevCount.current = currentCount
+    },
+    [currentCount]
+  )
+
+  useEffect(
+    () => {
+      IOManager.refreshObserver()
+      ticking = false
+    },
+    [currentCount]
+  )
+
+  const handleScroll = () => {
+    if (ticking) {
       return
     }
 
-    const { totalCount, countOfInitialPost } = this
-    const { currentCount } = this.state
-    const isNeedLoadMore = totalCount > currentCount * countOfInitialPost
+    ticking = true
+    requestAnimationFrame(() => {
+      const isTriggerPosition =
+        getDistance(window.scrollY + window.innerHeight) < BASE_LINE
 
-    if (isNeedLoadMore && isTriggerPosition) {
-      this.setState(
-        prevState => ({
-          currentCount: prevState.currentCount + 1,
-        }),
-        () => {
-          IOManager.refreshObserver()
-          this.ticking = false
-        }
-      )
-    }
+      if (!isTriggerPosition) {
+        ticking = false
+        return
+      }
+
+      const isNeedLoadMore = posts.length > currentCount * countOfInitialPost
+
+      if (isNeedLoadMore && isTriggerPosition) {
+        return setCurrentCount(prevCount.current + 1)
+      }
+    })
   }
 
-  componentDidUpdate(prevProps) {
-    const { currentCategory: prevCategory } = prevProps
-    const { currentCategory } = this.props
-
-    if (prevCategory !== currentCategory) {
-      IOManager.refreshObserver()
-    }
-  }
-
-  render() {
-    const { posts, countOfInitialPost, currentCategory } = this.props
-    const { currentCount } = this.state
-    const countOfItem = currentCount * countOfInitialPost
-    const filtered =
-      currentCategory === CATEGORY_TYPE.ALL
-        ? posts
-        : posts.filter(
-            ({ node }) => node.frontmatter.category === currentCategory
-          )
-
-    return filtered
-      .slice(0, countOfItem)
-      .map(({ node }, index) => (
-        <ThumbnailItem node={node} key={`item_${index}`} />
-      ))
-  }
+  return posts
+    .filter(
+      ({ node }) =>
+        currentCategory === CATEGORY_TYPE.ALL ||
+        node.frontmatter.category === currentCategory
+    )
+    .slice(0, currentCount * countOfInitialPost)
+    .map(({ node }, index) => (
+      <ThumbnailItem node={node} key={`item_${index}`} />
+    ))
 }

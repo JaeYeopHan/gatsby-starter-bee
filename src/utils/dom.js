@@ -11,3 +11,5 @@ export const getBody = () => getElement('body')
 export const addClassToBody = className => addClass(getBody(), className)
 export const removeClassToBody = className => removeClass(getBody(), className)
 export const hasClassOfBody = className => hasClass(getBody(), className)
+
+export const getDocumentHeight = () => document.documentElement.offsetHeight
