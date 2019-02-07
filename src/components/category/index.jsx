@@ -10,7 +10,6 @@ export const Category = ({ category, selectCategory, currentCategory }) => {
     <ul
       className="category-container"
       role="list"
-      aria-role=""
       id="category"
       style={{
         margin: `0 -${rhythm(3 / 4)}`,
