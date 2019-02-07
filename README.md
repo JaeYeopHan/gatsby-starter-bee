@@ -6,6 +6,10 @@
 
 ## Demo
 
+- [Default Theme](https://gatsby-starter-bee.netlify.com/)
+
+## Use case
+
 - [JBEE.io](http://jbee.io)
 
 ## 😎 Quick Start
