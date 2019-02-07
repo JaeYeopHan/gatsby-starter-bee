@@ -23,7 +23,7 @@ $ npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-be
 
 ### 2. Start developing.
 
-```
+```sh
 $ cd my-blog-starter/
 $ npm start # gatsby develop
 # open localhost:8080
