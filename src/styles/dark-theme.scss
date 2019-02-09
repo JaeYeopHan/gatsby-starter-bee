@@ -68,6 +68,11 @@ body.dark {
     border-left: 4px solid rgba(255, 255, 255, 0.822);
   }
 
+  h1,
+  h2 {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+  }
+
   .navigator {
     a {
       background-color: $navigator-background-color;

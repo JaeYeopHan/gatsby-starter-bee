@@ -18,3 +18,11 @@ export function destroy() {
 
   return scroll
 }
+
+export function go(dest) {
+  if (!scroll) throw Error('Not founded SmoothScroll instance')
+
+  scroll.animateScroll(dest)
+
+  return scroll
+}

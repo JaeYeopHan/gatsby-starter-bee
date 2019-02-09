@@ -10,12 +10,25 @@ import {
 const SESSION_STORAGE_KEY = '__felog_session_storage_key__'
 const LOCAL_STORAGE_KEY = '__felog_local_storage_key__'
 
-export function getState() {
-  return getValueFromSessionStorage(SESSION_STORAGE_KEY)
+export function getCount(defaultValue) {
+  return (
+    getValueFromSessionStorage(`${SESSION_STORAGE_KEY}/count`) || defaultValue
+  )
 }
 
-export function setState(val) {
-  return setValueToSessionStorage(SESSION_STORAGE_KEY, val)
+export function setCount(val) {
+  return setValueToSessionStorage(`${SESSION_STORAGE_KEY}/count`, val)
+}
+
+export function getCategory(defaultValue) {
+  return (
+    getValueFromSessionStorage(`${SESSION_STORAGE_KEY}/category`) ||
+    defaultValue
+  )
+}
+
+export function setCategory(val) {
+  return setValueToSessionStorage(`${SESSION_STORAGE_KEY}/category`, val)
 }
 
 export function getData() {

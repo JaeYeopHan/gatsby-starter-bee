@@ -20,7 +20,7 @@ export default ({ data, pageContext, location }) => {
   useEffect(() => {
     ScrollManager.init()
     return () => ScrollManager.destroy()
-  })
+  }, [])
 
   const post = data.markdownRemark
   const metaData = data.site.siteMetadata

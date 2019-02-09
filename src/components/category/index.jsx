@@ -1,40 +1,28 @@
 import React from 'react'
 
+import { Item } from './item'
 import { rhythm } from '../../utils/typography'
-import { CATEGORY_TYPE } from '../../constants'
 
 import './index.scss'
 
-export const Category = ({ category, selectCategory, currentCategory }) => {
+export const Category = ({ categories, category, selectCategory }) => {
   return (
     <ul
       className="category-container"
-      role="list"
+      role="tablist"
       id="category"
       style={{
         margin: `0 -${rhythm(3 / 4)}`,
       }}
     >
-      <li
-        className="item"
-        role="listitem"
-        aria-selected={currentCategory === CATEGORY_TYPE.ALL ? 'true' : 'false'}
-      >
-        <a href="#" onClick={e => selectCategory(e, CATEGORY_TYPE.ALL)}>
-          All
-        </a>
-      </li>
-      {category.map((item, idx) => (
-        <li
+      <Item title={'All'} category={category} selectCategory={selectCategory} />
+      {categories.map((item, idx) => (
+        <Item
           key={idx}
-          className="item"
-          role="listitem"
-          aria-selected={currentCategory === item ? 'true' : 'false'}
-        >
-          <a href="#" onClick={e => selectCategory(e, item)}>
-            {item}
-          </a>
-        </li>
+          title={item}
+          category={category}
+          selectCategory={selectCategory}
+        />
       ))}
     </ul>
   )

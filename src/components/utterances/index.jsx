@@ -1,22 +1,12 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 
 const src = 'https://utteranc.es/client.js'
 const branch = 'master'
 
-export class Utterences extends Component {
-  constructor(props) {
-    super(props)
+export const Utterences = ({ repo }) => {
+  const rootElm = React.createRef()
 
-    this.myRef = React.createRef()
-
-    this.state = {
-      pending: true,
-    }
-  }
-
-  componentDidMount() {
-    const { repo } = this.props
-
+  useEffect(() => {
     const utterances = document.createElement('script')
     const utterancesConfig = {
       src,
@@ -30,15 +20,8 @@ export class Utterences extends Component {
     Object.keys(utterancesConfig).forEach(configKey => {
       utterances.setAttribute(configKey, utterancesConfig[configKey])
     })
-    utterances.onload = () => this.setState({ pending: false })
-    this.myRef.current.appendChild(utterances)
-  }
+    rootElm.current.appendChild(utterances)
+  }, [])
 
-  render() {
-    return (
-      <div className="utterences" ref={this.myRef}>
-        {this.state.pending && <div>Loading script...</div>}
-      </div>
-    )
-  }
+  return <div className="utterences" ref={rootElm} />
 }

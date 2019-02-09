@@ -1,9 +1,9 @@
 .sponsor-button {
   text-align: right;
+  margin: 4px;
 
   .bmc-button {
     display: inline-block;
-    margin-right: 3px;
     padding: 0px 7px;
     width: 133px;
     height: 33px;
@@ -17,6 +17,11 @@
     font-size: 12px;
     line-height: 30px;
     text-align: left;
+
+    &:hover,
+    &:active {
+      background-color: #a0457d;
+    }
 
     img {
       width: 20px;
