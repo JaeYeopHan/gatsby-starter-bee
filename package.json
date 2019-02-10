@@ -48,9 +48,15 @@
     "typography-theme-github": "^0.16.18"
   },
   "devDependencies": {
+    "date-fns": "^1.30.1",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.14.2"
+    "fs-extra": "^7.0.1",
+    "gray-matter": "^4.0.2",
+    "inquirer": "^6.2.2",
+    "prettier": "^1.14.2",
+    "recursive-readdir": "^2.2.2",
+    "signale": "^1.3.0"
   },
   "homepage": "https://github.com/JaeYeopHan/gatsby-starter-bee#readme",
   "keywords": [
@@ -63,6 +69,7 @@
     "url": "git+https://github.com/JaeYeopHan/gatsby-starter-bee.git"
   },
   "scripts": {
+    "post": "node ./cli/create-new-post.js",
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
