@@ -4,6 +4,18 @@
 
 > Blog Starter Pack based on [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
 
+In this template...
+
+- 💄 Code highlight with Fira Code font
+- 😄 Emoji (emojione)
+- 🗣 Social share feature (Twitter, Facebook)
+- 💬 Comment feature (disqus, utterances)
+- ☕ 'Buy me a coffee' service
+- 🧙 CLI Tool
+- 🤖 GA
+- ⭐ Enhance UX
+- ⚙ Configurable
+
 ## Demo
 
 - [Default Theme](https://gatsby-starter-bee.netlify.com/)
@@ -25,7 +37,7 @@ $ npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-be
 
 ```sh
 $ cd my-blog-starter/
-$ npm start # gatsby develop
+$ npm start
 # open localhost:8080
 ```
 
@@ -37,6 +49,14 @@ You can write...
 - resume `content/__about` directory.
 
 > With markdown syntax and some meta data
+
+#### Support script for creating new post
+
+![](assets/cli-tool-example.gif)
+
+```sh
+$ npm run post
+```
 
 ### 4. Fix meta data
 
@@ -54,8 +74,8 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 /root
 ├── gatsby-browser.js // font, polyfill, onClientRender ...
 ├── gatsby-config.js // Gatsby config
-├── gatsby-meta-config.js // Template config
-└── gatsby-node.js // Node config
+├── gatsby-meta-config.js // Template meta config
+└── gatsby-node.js // Gatsby Node config
 ```
 
 ### Structure
