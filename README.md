@@ -66,6 +66,14 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JaeYeopHab/gatsby-starter-bee)
 
+if you want to deploy github pages, add following script to package.json
+
+```json
+"scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:${your github id}/${github page name}.github.io.git'"
+}
+```
+
 ## 🧐 Customize!
 
 ### Gatsby config
