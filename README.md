@@ -24,6 +24,8 @@ In this template...
 
 - [JBEE.io](http://jbee.io)
 
+> If you're using this template, Please Pull Request for `Use case`!
+
 ## 😎 Quick Start
 
 ### 1. Create a Gatsby site.
