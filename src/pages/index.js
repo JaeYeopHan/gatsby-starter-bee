@@ -68,7 +68,7 @@ export default ({ data, location }) => {
     return EventManager.toFit(() => setCount(prev => prev + 1), {
       dismissCondition: () => !isTriggerPos(),
       triggerCondition: () => isTriggerPos() && doesNeedMore(),
-    })
+    })()
   }
 
   return (
