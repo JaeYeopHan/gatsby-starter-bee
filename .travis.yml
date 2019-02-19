@@ -13,3 +13,8 @@ node_js:
 script:
   - npm install
   - npm run lint
+
+branches:
+  only:
+    - master
+    - /^greenkeeper.*$/
