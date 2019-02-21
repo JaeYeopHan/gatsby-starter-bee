@@ -119,6 +119,10 @@ src/styles
 └── variables.scss
 ```
 
+## ☕ Like it?
+
+<a href="https://www.buymeacoffee.com/jbee" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 ## :bug: Bug reporting
 
 [Issue](https://github.com/JaeYeopHan/gatsby-starter-bee/issues)
