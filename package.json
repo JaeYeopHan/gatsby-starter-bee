@@ -39,7 +39,7 @@
     "react-helmet": "^5.2.0",
     "react-switch": "^4.0.1",
     "react-typography": "^0.16.13",
-    "smooth-scroll": "^15.0.0",
+    "smooth-scroll": "^16.0.0",
     "typeface-catamaran": "0.0.54",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
