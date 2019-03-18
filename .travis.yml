@@ -1,18 +1,21 @@
 language: node_js
-
 os:
   - linux
   - osx
-
 node_js:
-  - 'node'
   - 'lts/*'
   - '8'
-
-script:
+before_install:
+  - npm install -g npm@latest
+  - npm install -g greenkeeper-lockfile@1
+install:
   - npm install
+before_script:
+  - greenkeeper-lockfile-update
+script:
   - npm run lint
-
+after_script:
+  - greenkeeper-lockfile-upload
 branches:
   only:
     - master
