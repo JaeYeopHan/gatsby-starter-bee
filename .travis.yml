@@ -5,6 +5,8 @@ os:
 node_js:
   - 'lts/*'
   - '8'
+env:
+  - LIGHTHOUSE_API_KEY=adf615154a8d49588da7f64376c841d0
 before_install:
   - npm install -g npm@latest
   - npm install -g greenkeeper-lockfile@1
@@ -16,6 +18,8 @@ script:
   - npm run lint
 after_script:
   - greenkeeper-lockfile-upload
+after_success:
+  - npm run lh -- --perf=90 --pwa=100 --no-comment https://gatsby-starter-bee.netlify.com/
 branches:
   only:
     - master
