@@ -38,7 +38,7 @@
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
-    "react-switch": "^4.0.1",
+    "react-switch": "^5.0.0",
     "react-typography": "^0.16.13",
     "smooth-scroll": "^16.0.0",
     "typeface-catamaran": "0.0.54",
