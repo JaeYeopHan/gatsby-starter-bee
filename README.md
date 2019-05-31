@@ -29,6 +29,7 @@ In this template...
 ## Use case
 
 - [JBEE.io](http://jbee.io)
+- [rinae's devlog](https://rinae.dev/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
