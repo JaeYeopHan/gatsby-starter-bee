@@ -1,6 +1,12 @@
-![](./assets/screenshot-pc.png)
+<div align="center">
+
+![](./assets/gatsby-starter-bee.png)
+
+</div>
 
 # gatsby-starter-bee
+
+![](./assets/screenshot-pc.png)
 
 [![Build Status](https://travis-ci.org/JaeYeopHan/gatsby-starter-bee.svg?branch=master)](https://travis-ci.org/JaeYeopHan/gatsby-starter-bee) [![Greenkeeper badge](https://badges.greenkeeper.io/JaeYeopHan/gatsby-starter-bee.svg)](https://greenkeeper.io/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JaeYeopHan/gatsby-starter-bee.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JaeYeopHan/gatsby-starter-bee/alerts/)
