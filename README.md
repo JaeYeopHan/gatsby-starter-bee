@@ -34,7 +34,7 @@ In this template...
 
 ## Use case
 
-- [JBEE.io](http://jbee.io)
+- [JBEE.io](https://jbee.io)
 - [rinae's devlog](https://rinae.dev/)
 
 > If you're using this template, Please Pull Request for `Use case`!
@@ -98,7 +98,7 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 
 ## 🧐 Customize!
 
-### Gatsby config
+### ⚙ Gatsby config
 
 ```
 /root
@@ -108,7 +108,7 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 └── gatsby-node.js // Gatsby Node config
 ```
 
-### Structure
+### ⛑ Structure
 
 ```
 src
@@ -125,7 +125,7 @@ src
     └── home.js
 ```
 
-### Style
+### 🎨 Style
 
 You can customize color in `src/styles` directory.
 
@@ -137,13 +137,27 @@ src/styles
 └── variables.scss
 ```
 
+### 🍭 Tips (You can change...)
+
+- Profile image! (replace file in `/content/assets/profile.png`)
+- Favicon image! (replace file in `/content/assets/felog.png`)
+- Header gradient! (\$theme-gradient `/styles/variables.scss`)
+
 ## ☕ Like it?
 
 <a href="https://www.buymeacoffee.com/jbee" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
+## 🤔 If...
+
+If you are currently writing in the Medium, consider migration with [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
+
 ## :bug: Bug reporting
 
 [Issue](https://github.com/JaeYeopHan/gatsby-starter-bee/issues)
+
+## 🎁 Contributing
+
+[Contributing guide](./CONTRIBUTING.md)
 
 ## LICENSE
 
