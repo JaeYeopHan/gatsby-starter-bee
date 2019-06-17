@@ -14,21 +14,19 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/gatsby-starter-bee/deploys)
 
-[한국어🇰🇷](./README.ko.md)
-
 > Blog Starter Pack based on [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
 
 In this template...
 
-- 💄 Code highlight with Fira Code font
-- 🧙 CLI Tool
-- 😄 Emoji (emojione)
-- 🗣 Social share feature (Twitter, Facebook)
-- 💬 Comment feature (disqus, utterances)
-- ☕ 'Buy me a coffee' service
-- 🤖 GA
-- ⭐ Enhance UX
-- ⚙ Configurable
+- 💄 Fira Code 폰트로 코드 하이라이팅 기능
+- 😄 Emoji 지원
+- 🗣 Twitter, Facebook 등 SNS 공유 지원
+- 💬 Disqus, utterances 댓글 기능 지원
+- ☕ 'Buy me a coffee' 라는 후원 기능
+- 🧙 포스트 작성을 위한 CLI 도구 지원
+- 🤖 GA 지원
+- ⭐ 여러 UX요소 추가
+- ⚙ 별도 설정 파일을 통한 블로그 세부 사항 설정 지원
 
 > [Gatsby Starters Docs](https://www.gatsbyjs.org/starters/JaeYeopHan/gatsby-starter-bee/)
 
@@ -45,38 +43,38 @@ In this template...
 
 ## 😎 Quick Start
 
-### 1. Create a Gatsby site.
+### 1. Gatsby 프로젝트를 시작합니다.
 
 ```sh
-# create a new Gatsby site using the blog starter
+# 이 블로그 스타터를 사용하여 gatsby 프로젝트를 시작할 수 있습니다.
 $ npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
 ```
 
-> If you are not using `npx`, following [Gatsby Getting Started](https://www.gatsbyjs.org/docs/quick-start)
+> 만약 `npx`를 사용하고 있지 않는다면, [Gatsby Getting Started](https://www.gatsbyjs.org/docs/quick-start) 글을 참고하거나 아래 커맨드를 실행해주세요.
 
 ```sh
 $ npm install -g gatsby-cli
 $ gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
 ```
 
-### 2. Start developing.
+### 2. 이제 로컬에서 확인하 ㄹ수 있습니다.
 
 ```sh
 $ cd my-blog-starter/
 $ npm start
-# open localhost:8000
+# 브라우저에서 localhost:8000로 접근합니다.
 ```
 
-### 3. Add your content
+### 3. 포스팅을 추가하세요.
 
-You can write...
+다음 두 곳에서 포스팅을 추가할 수 있습니다.
 
-- contents to blog in `content/blog` directory.
-- resume `content/__about` directory.
+- 블로그 포스팅은 `content/blog` 디렉토리에 추가해주세요.
+- 웹에 올려둘 이력서는 `content/__about` 디렉토리에 추가해주세요.
 
-> With markdown syntax and some meta data
+> 몇 가지의 메타데이터와 마크다운 문법으로 포스팅을 작성할 수 있습니다.
 
-#### Support script for creating new post
+#### 새로운 포스트를 작성할 때 커맨드라인을 통해 할 수 있습니다.
 
 ![](assets/cli-tool-example.gif)
 
@@ -84,15 +82,17 @@ You can write...
 $ npm run post
 ```
 
-### 4. Fix meta data
+위 커맨드를 입력하면 새로운 포스트가 생성됩니다.
 
-You can fix meta data of blog in `/gatsby-meta-config.js` file.
+### 4. 메타데이터 수정
 
-### 5. Publish with [netlify](https://netlify.com)
+`/gatsby-meta-config.js` 파일에서 블로그를 설정하는 여러 요소를 수정할 수 있습니다.
+
+### 5. [Netlify](https://netlify.com)로 배포!
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JaeYeopHab/gatsby-starter-bee)
 
-:bulb: if you want to deploy github pages, add following script to package.json
+:bulb: github pages를 통해 배포하고 싶다면 아래 npm script를 `package.json`에 추가해주세요.
 
 ```json
 "scripts": {
@@ -100,9 +100,9 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 }
 ```
 
-## 🧐 Customize!
+## 🧐 입맛에 맞게 바꾸기!
 
-### ⚙ Gatsby config
+### ⚙ 설정
 
 ```
 /root
@@ -112,7 +112,7 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 └── gatsby-node.js // Gatsby Node config
 ```
 
-### ⛑ Structure
+### ⛑ 구조
 
 ```
 src
@@ -129,9 +129,9 @@ src
     └── home.js
 ```
 
-### 🎨 Style
+### 🎨 스타일
 
-You can customize color in `src/styles` directory.
+`src/styles` 디렉토리에서 CSS 속성들을 수정할 수 있습니다.
 
 ```
 src/styles
@@ -141,25 +141,25 @@ src/styles
 └── variables.scss
 ```
 
-### 🍭 Tips (You can change...)
+### 🍭 꿀팁
 
-- Profile image! (replace file in `/content/assets/profile.png`)
-- Favicon image! (replace file in `/content/assets/felog.png`)
-- Header gradient! (\$theme-gradient `/styles/variables.scss`)
+- 프로필 사진! (replace file in `/content/assets/profile.png`)
+- 파비콘 이미지! (replace file in `/content/assets/felog.png`)
+- 헤더의 그라데이션! (\$theme-gradient `/styles/variables.scss`)
 
-## ☕ Like it?
+## ☕ 마음에 드셨나요?
 
 <a href="https://www.buymeacoffee.com/jbee" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
 ## 🤔 If...
 
-If you are currently writing in the Medium, consider migration with [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
+만약 현재 미디엄에서 블로그를 운영중이시라면 마이그레이션을 고려해보세요! [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
 
-## :bug: Bug reporting
+## :bug: 버그제보
 
 [Issue](https://github.com/JaeYeopHan/gatsby-starter-bee/issues)
 
-## 🎁 Contributing
+## 🎁 기여하기
 
 [Contributing guide](./CONTRIBUTING.md)
 
