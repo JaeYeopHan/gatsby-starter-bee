@@ -19,11 +19,11 @@
 In this template...
 
 - 💄 Code highlight with Fira Code font
+- 🧙 CLI Tool
 - 😄 Emoji (emojione)
 - 🗣 Social share feature (Twitter, Facebook)
 - 💬 Comment feature (disqus, utterances)
 - ☕ 'Buy me a coffee' service
-- 🧙 CLI Tool
 - 🤖 GA
 - ⭐ Enhance UX
 - ⚙ Configurable
