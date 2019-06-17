@@ -28,6 +28,8 @@ In this template...
 - ⭐ Enhance UX
 - ⚙ Configurable
 
+> [Gatsby Starters Docs](https://www.gatsbyjs.org/starters/JaeYeopHan/gatsby-starter-bee/)
+
 ## Demo
 
 - [Default Theme](https://gatsby-starter-bee.netlify.com/)
