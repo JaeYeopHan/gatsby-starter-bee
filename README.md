@@ -43,7 +43,8 @@ In this template...
 ## Use case
 
 - [JBEE.io](https://jbee.io)
-- [rinae's devlog](https://rinae.dev/)
+- [Rinae's devlog](https://rinae.dev/)
+- [Seungdols Company](https://seungdols.dev/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
