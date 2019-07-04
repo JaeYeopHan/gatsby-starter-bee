@@ -45,6 +45,7 @@ In this template...
 - [JBEE.io](https://jbee.io)
 - [Rinae's devlog](https://rinae.dev/)
 - [Seungdols Company](https://seungdols.dev/)
+- [Kooku's log](https://kooku.netlify.com/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
