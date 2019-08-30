@@ -47,6 +47,7 @@ In this template...
 - [Seungdols Company](https://seungdols.dev/)
 - [Kooku's log](https://kooku.netlify.com/)
 - [SOSOLOG](https://so-so.dev/)
+- [delivan.dev](https://delivan.dev/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
