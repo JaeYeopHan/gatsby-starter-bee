@@ -61,7 +61,7 @@ $ npm install -g gatsby-cli
 $ gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
 ```
 
-### 2. 이제 로컬에서 확인하 ㄹ수 있습니다.
+### 2. 이제 로컬에서 확인하실 수 있습니다.
 
 ```sh
 $ cd my-blog-starter/
