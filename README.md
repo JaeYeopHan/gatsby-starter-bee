@@ -48,6 +48,7 @@ In this template...
 - [Kooku's log](https://kooku.netlify.com/)
 - [SOSOLOG](https://so-so.dev/)
 - [delivan.dev](https://delivan.dev/)
+- [Jungin's blog](https://jungin.netlify.com/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
