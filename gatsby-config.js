@@ -29,6 +29,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-link-preview`,
+            options: {
+              test: 'test',
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
