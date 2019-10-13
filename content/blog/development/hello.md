@@ -91,7 +91,25 @@ You can add comments feature by selecting one of them.
 - [ ] Disqus
 - [ ] utterances
 
-## 8. Other features of this template
+## 8. Plugin Feature - Link Card!
+
+### link to card
+
+```md
+[$card](https://www.naver.com)
+```
+
+[$card](https://www.naver.com)
+
+### When error! (Not found link)
+
+```md
+[$card](https://error.notfound.error.error)
+```
+
+[$card](https://error.notfound.error.error)
+
+## 9. Other features of this template
 
 1. You can add resume to `/about`
 2. Lazy rendering
