@@ -93,8 +93,6 @@ You can add comments feature by selecting one of them.
 
 ## 8. Plugin Feature - Link Card!
 
-(WIP feature...)
-
 ### link to card
 
 ```md
