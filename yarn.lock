@@ -4889,9 +4889,9 @@ gatsby-remark-images@^3.0.10:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-link-card@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-link-card/-/gatsby-remark-link-card-1.0.3.tgz#fc46ed41ad3231bc73a8f1fdc1dab96202f98d46"
+gatsby-remark-link-card@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-link-card/-/gatsby-remark-link-card-1.0.1.tgz#e3e106c61ef38ac1c77b6c8ff078d83671bbbeaa"
   dependencies:
     puppeteer "^1.20.0"
     unist-util-visit "^2.0.0"
