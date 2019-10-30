@@ -29,9 +29,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-link-card`,
-          },
-          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
