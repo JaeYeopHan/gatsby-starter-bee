@@ -101,12 +101,6 @@ You can add comments feature by selecting one of them.
 
 [$card](https://www.naver.com)
 
-```md
-[$card](https://github.com)
-```
-
-[$card](https://github.com)
-
 ### When error! (Not found link)
 
 ```md
