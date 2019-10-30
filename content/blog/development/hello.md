@@ -96,18 +96,18 @@ You can add comments feature by selecting one of them.
 ### link to card
 
 ```md
-[%card](https://www.naver.com)
+[$card](https://www.naver.com)
 ```
 
-[%card](https://www.naver.com)
+[$card](https://www.naver.com)
 
 ### When error! (Not found link)
 
 ```md
-[%card](https://error.notfound.error.error)
+[$card](https://error.notfound.error.error)
 ```
 
-[%card](https://error.notfound.error.error)
+[$card](https://error.notfound.error.error)
 
 ## 9. Other features of this template
 

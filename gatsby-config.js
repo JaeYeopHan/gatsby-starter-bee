@@ -30,9 +30,6 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-link-card`,
-            options: {
-              delimiter: '%card',
-            },
           },
           {
             resolve: `gatsby-remark-images`,
