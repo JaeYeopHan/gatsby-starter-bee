@@ -49,6 +49,7 @@ In this template...
 - [SOSOLOG](https://so-so.dev/)
 - [delivan.dev](https://delivan.dev/)
 - [Jungin's blog](https://jungin.netlify.com/)
+- [Zero's blog](https://awesomezero.com/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
