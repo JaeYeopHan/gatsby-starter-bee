@@ -42,6 +42,7 @@ In this template...
 
 - [JBEE.io](https://jbee.io)
 - [rinae's devlog](https://rinae.dev/)
+- [Zero's blog](https://awesomezero.com/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
