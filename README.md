@@ -50,6 +50,7 @@ In this template...
 - [delivan.dev](https://delivan.dev/)
 - [Jungin's blog](https://jungin.netlify.com/)
 - [Zero's blog](https://awesomezero.com/)
+- [Jonathan's blog](https://www.learningsomethingnew.com/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
