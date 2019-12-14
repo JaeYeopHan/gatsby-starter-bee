@@ -9,19 +9,21 @@ draft: false
 
 Welcome, Gatsby! This starter is full-package for your new blog!
 
-## 1. Support Three frontmatter
+## 1. Support Four frontmatter
 
 ```
 ---
 title: 'Welcome Bee starter'
 date: 2019-2-6 16:21:13
 category: 'development'
+draft: false
 ---
 ```
 
 1. title
 2. date
 3. category
+4. draft
 
 ## 2. Code highlighting
 
