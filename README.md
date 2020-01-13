@@ -51,7 +51,7 @@ In this template...
 - [Jungin's blog](https://jungin.netlify.com/)
 - [Zero's blog](https://awesomezero.com/)
 - [Jonathan's blog](https://www.learningsomethingnew.com/)
-
+- [Hanul's blog](https://hanul-dev.netlify.com/)
 > If you're using this template, Please Pull Request for `Use case`!
 
 ## 😎 Quick Start
