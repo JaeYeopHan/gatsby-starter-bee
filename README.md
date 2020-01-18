@@ -54,6 +54,7 @@ In this template...
 - [@deveely-log](https://deveely-log.netlify.com/)
 - [Hanul's blog](https://hanul-dev.netlify.com/)
 - [Hoons Blog](https://hoons-up.netlify.com/)
+- [JWN.cool](https://jwn.cool)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
