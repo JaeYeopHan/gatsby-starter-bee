@@ -44,6 +44,7 @@ In this template...
 - [rinae's devlog](https://rinae.dev/)
 - [Zero's blog](https://awesomezero.com/)
 - [ugaemi's dev note](https://ugaemi.github.io)
+- [Minsu's Dev Log](https://alstn2468.github.io/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
