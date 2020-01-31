@@ -57,6 +57,7 @@ In this template...
 - [JWN.cool](https://jwn.cool)
 - [ugaemi's dev note](https://ugaemi.github.io)
 - [Minsu's Dev Log](https://alstn2468.github.io/)
+- [JunHyuk's Blog](https://jhlym.github.io/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
