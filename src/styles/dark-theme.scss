@@ -8,6 +8,15 @@ body.dark {
     color: $dark-light-font-color;
   }
 
+  // header
+  .top {
+    background: $dark-header-color;
+
+    & svg {
+      fill: $dark-lightest-font-color;
+    }
+  }
+
   .bio {
     .author-name-content {
       background-color: $dark-category-border-color;
