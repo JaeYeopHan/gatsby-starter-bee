@@ -56,6 +56,7 @@ In this template...
 - [Hoons Blog](https://hoons-up.netlify.com/)
 - [JWN.cool](https://jwn.cool)
 - [ugaemi's dev note](https://ugaemi.github.io)
+- [JunHyuk's blog](https://jhlym.github.io)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
