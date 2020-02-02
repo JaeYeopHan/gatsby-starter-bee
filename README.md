@@ -1,12 +1,8 @@
 <div align="center">
 
-![](./assets/gatsby-starter-bee.png)
+<img src="./assets/gatsby-starter-bee.png" width="360px" />
 
 </div>
-
-# gatsby-starter-bee
-
-![](./assets/screenshot-pc.png)
 
 [![Financial Contributors on Open Collective](https://opencollective.com/gatsby-starter-bee/all/badge.svg?label=financial+contributors)](https://opencollective.com/gatsby-starter-bee) [![Greenkeeper badge](https://badges.greenkeeper.io/JaeYeopHan/gatsby-starter-bee.svg)](https://greenkeeper.io/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JaeYeopHan/gatsby-starter-bee.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JaeYeopHan/gatsby-starter-bee/alerts/)
@@ -19,6 +15,8 @@
 </a>
 
 [한국어🇰🇷](./README.ko.md)
+
+![screenshot-pc](./assets/screenshot-pc.png)
 
 > Blog Starter Pack based on [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
 
@@ -41,6 +39,8 @@ In this template...
 - [Default Theme](https://gatsby-starter-bee.netlify.com/)
 
 ## Use case
+
+![demos](./assets/demos.png)
 
 - [JBEE.io](https://jbee.io)
 - [Rinae's devlog](https://rinae.dev/)
