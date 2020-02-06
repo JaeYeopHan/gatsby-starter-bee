@@ -58,6 +58,7 @@ In this template...
 - [ugaemi's dev note](https://ugaemi.github.io)
 - [Minsu's Dev Log](https://alstn2468.github.io/)
 - [Yungi's Dev Blog](https://yungis.dev/)
+- [\<Taenylog \/\>](https://taeny.dev/)
 
 > If you're using this template, Please Pull Request for `Use case`!
 
