@@ -1,12 +1,8 @@
 <div align="center">
 
-![](./assets/gatsby-starter-bee.png)
+  <img src="./assets/gatsby-starter-bee.png" width="360px" />
 
 </div>
-
-# gatsby-starter-bee
-
-![](./assets/screenshot-pc.png)
 
 [![Build Status](https://travis-ci.org/JaeYeopHan/gatsby-starter-bee.svg?branch=master)](https://travis-ci.org/JaeYeopHan/gatsby-starter-bee) [![Greenkeeper badge](https://badges.greenkeeper.io/JaeYeopHan/gatsby-starter-bee.svg)](https://greenkeeper.io/)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/JaeYeopHan/gatsby-starter-bee.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JaeYeopHan/gatsby-starter-bee/alerts/)
@@ -18,7 +14,7 @@
 <img alt="Twitter: JbeeLjyhanll" src="https://img.shields.io/twitter/follow/JbeeLjyhanll.svg?style=social" target="_blank" />
 </a>
 
-> Blog Starter Pack based on [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
+![screenshot](./assets/screenshot.png)
 
 In this template...
 
@@ -32,49 +28,65 @@ In this template...
 - ⭐ 여러 UX요소 추가
 - ⚙ 별도 설정 파일을 통한 블로그 세부 사항 설정 지원
 
-> [Gatsby Starters Docs](https://www.gatsbyjs.org/starters/JaeYeopHan/gatsby-starter-bee/)
+> [이 블로그 템플릿에 대한 정보](https://www.gatsbyjs.org/starters/JaeYeopHan/gatsby-starter-bee/)
 
 ## Demo
 
-- [Default Theme](https://gatsby-starter-bee.netlify.com/)
+- [기본 테마 적용 템플릿 화면](https://gatsby-starter-bee.netlify.com/)
 
-## Use case
+<details>
+  <summary>Use case</summary>
+  <p>
+    <img src="./assets/demos.png" alt="demo-image">
+    <ul>
+      <li>JBEE.io: https://jbee.io</li>
+      <li>Rinae's devlog: https://rinae.dev/</li>
+      <li>Seungdols Company: https://seungdols.dev/</li>
+      <li>Kooku's log: https://kooku.netlify.com/</li>
+      <li>SOSOLOG: https://so-so.dev/</li>
+      <li>delivan.dev: https://delivan.dev/</li>
+      <li>Jungin's blog: https://jungin.netlify.com/</li>
+      <li>Zero's blog: https://awesomezero.com/</li>
+      <li>Jonathan's blog: https://www.learningsomethingnew.com/</li>
+      <li>@deveely-log: https://deveely-log.netlify.com/</li>
+      <li>Hanul's blog: https://hanul-dev.netlify.com/</li>
+      <li>Hoons Blog: https://hoons-up.netlify.com/</li>
+      <li>JWN.cool: https://jwn.cool</li>
+      <li>ugaemi's dev note: https://ugaemi.github.io</li>
+      <li>Minsu's Dev Log: https://alstn2468.github.io/</li>
+      <li>Yungi's Dev Blog: https://yungis.dev/</li>
+      <li>< Taenylog />: https://taeny.dev/</li>
+    </ul>
+  </p>
+</details>
 
-- [JBEE.io](https://jbee.io)
-- [rinae's devlog](https://rinae.dev/)
-- [Zero's blog](https://awesomezero.com/)
-- [ugaemi's dev note](https://ugaemi.github.io)
-- [Minsu's Dev Log](https://alstn2468.github.io/)
-- [Yungi's Dev Blog](https://yungis.dev/)
-- [\<Taenylog \/\>](https://taeny.dev/)
-
-> If you're using this template, Please Pull Request for `Use case`!
+> 이 템플릿을 사용하여 블로그를 만들었다면 위 '사용한 블로그' 리스트에 추가해주세요! PR을 통해 등록해주시면 됩니다!
 
 ## 😎 Quick Start
 
-### 1. Gatsby 프로젝트를 시작합니다.
+### 1. Gatsby 프로젝트를 시작
 
 ```sh
 # 이 블로그 스타터를 사용하여 gatsby 프로젝트를 시작할 수 있습니다.
-$ npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
+npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
 ```
 
 > 만약 `npx`를 사용하고 있지 않는다면, [Gatsby Getting Started](https://www.gatsbyjs.org/docs/quick-start) 글을 참고하거나 아래 커맨드를 실행해주세요.
 
 ```sh
-$ npm install -g gatsby-cli
-$ gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
+npm install -g gatsby-cli
+gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
 ```
 
-### 2. 이제 로컬에서 확인하실 수 있습니다.
+### 2. 이제 로컬에서 확인하실 수 있습니다
 
 ```sh
-$ cd my-blog-starter/
-$ npm start
+cd my-blog-starter/
+npm start
 # 브라우저에서 localhost:8000로 접근합니다.
 ```
 
-### 3. 포스팅을 추가하세요.
+### 3. 포스팅을 추가하세요
 
 다음 두 곳에서 포스팅을 추가할 수 있습니다.
 
@@ -83,12 +95,12 @@ $ npm start
 
 > 몇 가지의 메타데이터와 마크다운 문법으로 포스팅을 작성할 수 있습니다.
 
-#### 새로운 포스트를 작성할 때 커맨드라인을 통해 할 수 있습니다.
+#### 새로운 포스트를 작성할 때 커맨드라인을 통해 할 수 있습니다
 
-![](assets/cli-tool-example.gif)
+![cli-tool-example](assets/cli-tool-example.gif)
 
 ```sh
-$ npm run post
+npm run post
 ```
 
 위 커맨드를 입력하면 새로운 포스트가 생성됩니다.
@@ -97,7 +109,7 @@ $ npm run post
 
 `/gatsby-meta-config.js` 파일에서 블로그를 설정하는 여러 요소를 수정할 수 있습니다.
 
-### 5. [Netlify](https://netlify.com)로 배포!
+### 5. [Netlify](https://netlify.com)로 배포
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JaeYeopHab/gatsby-starter-bee)
 
@@ -109,11 +121,13 @@ $ npm run post
 }
 ```
 
-## 🧐 입맛에 맞게 바꾸기!
+> `gh-pages` 모듈이 필요할 경우 설치가 필요합니다.
+
+## 🧐 입맛에 맞게 바꾸기
 
 ### ⚙ 설정
 
-```
+```sh
 /root
 ├── gatsby-browser.js // font, polyfill, onClientRender ...
 ├── gatsby-config.js // Gatsby config
@@ -123,7 +137,7 @@ $ npm run post
 
 ### ⛑ 구조
 
-```
+```sh
 src
 ├── components // Just component with styling
 ├── layout // home, post layout
@@ -142,7 +156,7 @@ src
 
 `src/styles` 디렉토리에서 CSS 속성들을 수정할 수 있습니다.
 
-```
+```sh
 src/styles
 ├── code.scss
 ├── dark-theme.scss
@@ -160,7 +174,7 @@ src/styles
 
 <a href="https://www.buymeacoffee.com/jbee" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-## 🤔 If...
+## 🤔 만약에...
 
 만약 현재 미디엄에서 블로그를 운영중이시라면 마이그레이션을 고려해보세요! [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
 
