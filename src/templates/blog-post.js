@@ -15,6 +15,7 @@ import { Utterences } from '../components/utterances'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
+import 'katex/dist/katex.min.css'
 
 export default ({ data, pageContext, location }) => {
   useEffect(() => {

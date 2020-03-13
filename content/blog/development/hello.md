@@ -94,7 +94,17 @@ You can add comments feature by selecting one of them.
 - [ ] Disqus
 - [ ] utterances
 
-## 8. Other features of this template
+## 8. Support latex
+
+Support latex rendering with katex plugin.
+
+```tex
+$$\prod_{i=a}^{b} f(i)$$
+```
+
+$$\prod_{i=a}^{b} f(i)$$
+
+## 9. Other features of this template
 
 1. You can add resume to `/about`
 2. Lazy rendering
