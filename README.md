@@ -58,6 +58,7 @@ In this template...
       <li>Minsu's Dev Log: https://alstn2468.github.io/</li>
       <li>Yungi's Dev Blog: https://yungis.dev/</li>
       <li>< Taenylog />: https://taeny.dev/</li>
+      <li>cdbrouk`s devlog: https://brouk-devlog.netlify.com/ </li>
     </ul>
   </p>
 </details>
