@@ -106,6 +106,8 @@ npm run post
 
 위 커맨드를 입력하면 새로운 포스트가 생성됩니다.
 
+👉 **gatsby-post-gen** CLI 도구를 사용합니다. (https://github.com/JaeYeopHan/gatsby-post-gen)
+
 ### 4. 메타데이터 수정
 
 `/gatsby-meta-config.js` 파일에서 블로그를 설정하는 여러 요소를 수정할 수 있습니다.

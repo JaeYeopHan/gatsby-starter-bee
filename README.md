@@ -106,6 +106,8 @@ You can write...
 npm run post
 ```
 
+👉 Use **gatsby-post-gen** (https://github.com/JaeYeopHan/gatsby-post-gen)
+
 ### 4. Fix meta data
 
 You can fix meta data of blog in `/gatsby-meta-config.js` file.
