@@ -43,7 +43,7 @@ const refineContents = rawContents =>
 
 const fetchCategory = async () => {
   let category
-  const customCategoryOption = '[[ CREATE NEW CATEGORY ]]'
+  const customCategoryOption = '[ CREATE NEW CATEGORY ]'
   const categories = await getCategories()
   const categoryChoices = [
     ...categories,
@@ -54,7 +54,7 @@ const fetchCategory = async () => {
     {
       type: 'list',
       name: 'selectedCategory',
-      message: 'Select a category',
+      message: 'Select a category: ',
       choices: categoryChoices,
     },
   ])
@@ -84,7 +84,8 @@ const fetchCategory = async () => {
   }
 
   if (!category) {
-    throw Error('Unknown Error: Cannot find category!')
+    log.error('Cannot find category :(\n')
+    throw Error('Unknown Error...')
   }
 
   return category
@@ -95,7 +96,7 @@ const fetchTitle = async category => {
     {
       type: 'input',
       name: 'title',
-      message: 'Enter the title',
+      message: 'Enter the title: ',
       default: () => 'New post title',
       validate: async val => {
         if (val.includes("'")) {
@@ -107,7 +108,7 @@ const fetchTitle = async category => {
         const destFileExists = await fs.pathExists(dest)
 
         if (destFileExists) {
-          return `Already exist file name:: ${fileName}.md`
+          return `⚠️  Already exist file name:: ${fileName}.md.`
         }
 
         return true
@@ -121,8 +122,8 @@ const fetchTitle = async category => {
 module.exports = (async function() {
   const date = dateFns.format(new Date(), DATE_FORMAT)
 
-  log.info('Create new post:: ', date)
-  log.start('Start to process!\n')
+  log.info('📅 Create new post:', date)
+  log.start('🚚 Start to process!\n')
 
   const category = await fetchCategory()
   const destDir = `${TARGET_DIR}/${category}`
@@ -134,7 +135,13 @@ module.exports = (async function() {
 
   const title = await fetchTitle(category)
   const fileName = getFileName(title)
-  const contents = refineContents({ title, date, category, draft: false })
+  const contents = refineContents({
+    title,
+    date,
+    category,
+    thumbnail: '{ thumbnailSrc }',
+    draft: false,
+  })
 
   fs.writeFile(`${destDir}/${fileName}.md`, contents, err => {
     if (err) {
@@ -143,7 +150,9 @@ module.exports = (async function() {
     }
     console.log('')
 
-    log.success('Success to create new post!')
-    log.note(`/${category}/${fileName}.md\n${contents}`)
+    log.complete(
+      `🚀 Success to create new post! /${category}/${fileName}.md\n\n${contents}`
+    )
+    log.star(`✏️  Let's start blogging!\n`)
   })
 })()
