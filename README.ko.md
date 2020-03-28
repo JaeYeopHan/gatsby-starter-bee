@@ -170,6 +170,8 @@ src/styles
 - 프로필 사진! (replace file in `/content/assets/profile.png`)
 - 파비콘 이미지! (replace file in `/content/assets/felog.png`)
 - 헤더의 그라데이션! (\$theme-gradient `/styles/variables.scss`)
+- Utterances를 위한 repository를 설정해주세요! (`/gatsby-meta-config.js`의 repository 주소를 교체해주세요.)
+  - ⚠️ 이 가이드(https://utteranc.es/)를 꼭 확인해주세요.
 
 ## ☕ 마음에 드셨나요?
 
