@@ -40,7 +40,7 @@ You can write...
 
 ### Support script for creating new post
 
-![](assets/cli-tool-example.gif)
+![](./images/cli-tool-example.gif)
 
 ```sh
 $ npm run post
