@@ -27,13 +27,21 @@ export default ({ data, pageContext, location }) => {
   const metaData = data.site.siteMetadata
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
+  const { title: postTitle, thumbnail } = post.frontmatter
+  const thumbnailSrc = thumbnail
+    ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
+    : undefined
 
   return (
     <Layout location={location} title={title}>
-      <Head title={post.frontmatter.title} description={post.excerpt} />
-      <PostTitle title={post.frontmatter.title} />
+      <Head
+        title={postTitle}
+        description={post.excerpt}
+        thumbnail={thumbnailSrc}
+      />
+      <PostTitle title={postTitle} />
       <PostContainer html={post.html} />
-      <SocialShare title={post.frontmatter.title} author={author} />
+      <SocialShare title={postTitle} author={author} />
       {!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
       )}
@@ -76,6 +84,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        thumbnail {
+          childImageSharp {
+            fixed(width: 800) {
+              src
+            }
+          }
+        }
       }
     }
   }
