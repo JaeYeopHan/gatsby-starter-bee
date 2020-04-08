@@ -59,6 +59,7 @@ In this template...
       <li>Yungi's Dev Blog: https://yungis.dev/</li>
       <li>< Taenylog />: https://taeny.dev/</li>
       <li>brouk's devlog: https://brouk-devlog.netlify.com/</li>
+      <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
     </ul>
   </p>
 </details>
