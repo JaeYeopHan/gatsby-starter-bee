@@ -39,6 +39,7 @@ export default ({ data, pageContext, location }) => {
         title={postTitle}
         description={post.excerpt}
         thumbnail={thumbnailSrc}
+        pathname={location.pathname}
       />
       <PostTitle title={postTitle} />
       <PostDate date={date} />
