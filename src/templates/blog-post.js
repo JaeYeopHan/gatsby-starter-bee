@@ -30,7 +30,7 @@ export default ({ data, pageContext, location }) => {
   const { disqusShortName, utterances } = comment
   const { title: postTitle, date, thumbnail } = post.frontmatter
   const thumbnailSrc = thumbnail
-    ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
+    ? `${siteUrl}${thumbnail.childImageSharp.sizes.src}`
     : undefined
 
   return (
@@ -39,6 +39,7 @@ export default ({ data, pageContext, location }) => {
         title={postTitle}
         description={post.excerpt}
         thumbnail={thumbnailSrc}
+        pathname={location.pathname}
       />
       <PostTitle title={postTitle} />
       <PostDate date={date} />
@@ -88,8 +89,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         thumbnail {
           childImageSharp {
-            fixed(width: 800) {
-              src
+            sizes(maxWidth: 800) {
+              ...GatsbyImageSharpSizes
             }
           }
         }

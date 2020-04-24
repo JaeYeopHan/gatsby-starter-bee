@@ -3,13 +3,26 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-export function Head({ description, lang, meta, keywords, title }) {
+export function Head({
+  description,
+  lang,
+  meta,
+  keywords,
+  title,
+  thumbnail,
+  pathname,
+}) {
   return (
     <StaticQuery
       query={detailsQuery}
-      render={data => {
+      render={(data) => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const metaImage = thumbnail || data.site.siteMetadata.defaultImage
+        const canonical = pathname
+          ? `${data.site.siteMetadata.siteUrl}${pathname}`
+          : undefined
+
         return (
           <Helmet
             htmlAttributes={{
@@ -17,10 +30,24 @@ export function Head({ description, lang, meta, keywords, title }) {
             }}
             title={title}
             titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            link={
+              canonical
+                ? [
+                    {
+                      rel: 'canonical',
+                      href: canonical,
+                    },
+                  ]
+                : []
+            }
             meta={[
               {
                 name: `description`,
                 content: metaDescription,
+              },
+              {
+                name: `image`,
+                content: metaImage,
               },
               {
                 property: `og:title`,
@@ -35,8 +62,8 @@ export function Head({ description, lang, meta, keywords, title }) {
                 content: `website`,
               },
               {
-                name: `twitter:card`,
-                content: `summary`,
+                property: `og:url`,
+                content: canonical,
               },
               {
                 name: `twitter:creator`,
@@ -59,6 +86,33 @@ export function Head({ description, lang, meta, keywords, title }) {
                     }
                   : []
               )
+              .concat(
+                thumbnail
+                  ? [
+                      {
+                        property: 'og:image',
+                        content: metaImage,
+                      },
+                      {
+                        property: 'og:image:width',
+                        content: metaImage.width,
+                      },
+                      {
+                        property: 'og:image:height',
+                        content: metaImage.height,
+                      },
+                      {
+                        name: 'twitter:card',
+                        content: 'summary_large_image',
+                      },
+                    ]
+                  : [
+                      {
+                        name: 'twitter:card',
+                        content: 'summary',
+                      },
+                    ]
+              )
               .concat(meta)}
           />
         )
@@ -79,6 +133,12 @@ Head.propTypes = {
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
+  thumbnail: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+  }),
+  pathname: PropTypes.string,
 }
 
 const detailsQuery = graphql`
@@ -88,6 +148,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        siteUrl
       }
     }
   }
