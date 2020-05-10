@@ -873,6 +873,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@fastly/performance-observer-polyfill@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@fastly/performance-observer-polyfill/-/performance-observer-polyfill-1.1.1.tgz#2e64762fa2e43f32c01dcb2ac68421aded55bbb8"
+  integrity sha512-hmXJBYhIs77KPyg/IcPM5sDeQSPLrTzD6DqGfSUUtvEUoQxbW6nxHYCYJE8CP+Ay+OUqLZlTpW+w1OEOZWckzQ==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -5821,11 +5826,12 @@ gatsby-remark-emoji@0.0.2:
     bluebird "^3.5.0"
     emojione "^3.1.2"
 
-gatsby-remark-images-medium-zoom@^1.2.1:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.4.0.tgz#6becf8c34382391b59da26530e65cb19fea401d6"
-  integrity sha512-JKLRiF5AOTxZvohDuCRzWQj4r80vFm69S1RGBclfD6IXF/nmb0PxMRHSObn/IwSQUb5vLQ3MSxTYfVdEO5j/0A==
+gatsby-remark-images-medium-zoom@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-images-medium-zoom/-/gatsby-remark-images-medium-zoom-1.7.0.tgz#b9a55ebf29a4a15f9e7da7a8f4d0dfbe47aa5717"
+  integrity sha512-TLaq+ua+nO2CX/B/FnWB0OvJiLdplzbRCXrgCxYoZs3RkN5IfUu9BJYKEFjzx6J3uhwLvBA7XqE5cFOZ2cu4AQ==
   dependencies:
+    "@fastly/performance-observer-polyfill" "^1.1.1"
     medium-zoom "^1.0.4"
 
 gatsby-remark-images@^3.0.10:
