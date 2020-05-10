@@ -79,4 +79,7 @@ body.dark {
       color: $navigator-text-color;
     }
   }
+  td {
+    border-bottom: 1px solid #eee;
+  }
 }
