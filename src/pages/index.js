@@ -9,10 +9,10 @@ import { Category } from '../components/category'
 import { Contents } from '../components/contents'
 
 import * as ScrollManager from '../utils/scroll'
-import * as Storage from '../utils/storage'
 import * as IOManager from '../utils/visible'
 import * as EventManager from '../utils/event-manager'
 import * as Dom from '../utils/dom'
+import { useRenderedCount } from '../hooks/useRenderedCount'
 
 import { HOME_TITLE, CATEGORY_TYPE } from '../constants'
 
@@ -24,11 +24,7 @@ function getDistance(currentPos) {
 }
 
 export default ({ data, location }) => {
-  const initialCount = Storage.getCount(1)
-  const initialCategory = Storage.getCategory(CATEGORY_TYPE.ALL)
-  const [count, setCount] = useState(initialCount)
-  const countRef = useRef(count)
-  const [category, setCategory] = useState(initialCategory)
+  const [category, setCategory] = useState(CATEGORY_TYPE.ALL)
 
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
@@ -36,27 +32,36 @@ export default ({ data, location }) => {
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
 
   useEffect(() => {
-    window.addEventListener(`scroll`, onScroll, { passive: false })
-    IOManager.init()
     ScrollManager.init()
-
     return () => {
-      window.removeEventListener(`scroll`, onScroll, { passive: false })
-      IOManager.destroy()
       ScrollManager.destroy()
     }
   }, [])
 
   useEffect(() => {
-    countRef.current = count
+    window.addEventListener(`scroll`, onScroll, { passive: false })
+    return () => {
+      window.removeEventListener(`scroll`, onScroll, { passive: false })
+    }
+  }, [])
+
+  useEffect(() => {
+    IOManager.init()
+    return () => {
+      IOManager.destroy()
+    }
+  }, [])
+
+  useEffect(() => {
     IOManager.refreshObserver()
-    Storage.setCount(count)
-    Storage.setCategory(category)
   })
+
+  const [count, countRef, increaseCount] = useRenderedCount()
 
   const selectCategory = category => {
     setCategory(category)
     ScrollManager.go(DEST_POS)
+    window.history.pushState({ category }, '', `?category=${category}`)
   }
 
   const onScroll = () => {
@@ -65,7 +70,7 @@ export default ({ data, location }) => {
     const doesNeedMore = () =>
       posts.length > countRef.current * countOfInitialPost
 
-    return EventManager.toFit(() => setCount(prev => prev + 1), {
+    return EventManager.toFit(increaseCount, {
       dismissCondition: () => !isTriggerPos(),
       triggerCondition: () => isTriggerPos() && doesNeedMore(),
     })()
