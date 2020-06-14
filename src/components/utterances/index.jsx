@@ -8,7 +8,7 @@ const branch = 'master'
 const DARK_THEME = 'photon-dark'
 const LIGHT_THEME = 'github-light'
 
-export const Utterences = ({ repo }) => {
+export const Utterances = ({ repo }) => {
   const rootElm = React.createRef()
 
   useEffect(() => {
@@ -31,5 +31,5 @@ export const Utterences = ({ repo }) => {
     rootElm.current.appendChild(utterances)
   }, [])
 
-  return <div className="utterences" ref={rootElm} />
+  return <div className="utterances" ref={rootElm} />
 }
