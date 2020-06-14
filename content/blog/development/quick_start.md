@@ -1,6 +1,6 @@
 ---
 title: 'Quick Start'
-date: 2019-5-31 16:21:13
+date: 2020-6-14 17:21:13
 category: 'development'
 draft: false
 ---
