@@ -20,17 +20,6 @@ export function setCount(val) {
   return setValueToSessionStorage(`${SESSION_STORAGE_KEY}/count`, val)
 }
 
-export function getCategory(defaultValue) {
-  return (
-    getValueFromSessionStorage(`${SESSION_STORAGE_KEY}/category`) ||
-    defaultValue
-  )
-}
-
-export function setCategory(val) {
-  return setValueToSessionStorage(`${SESSION_STORAGE_KEY}/category`, val)
-}
-
 export function getData() {
   return getValueFromLocalStorage(LOCAL_STORAGE_KEY)
 }
