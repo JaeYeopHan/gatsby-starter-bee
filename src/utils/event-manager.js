@@ -1,6 +1,6 @@
 export function toFit(
   cb,
-  { dismissCondition = () => false, triggerCondition = () => true }
+  { dismissCondition = false, triggerCondition = true }
 ) {
   if (!cb) {
     throw Error('Invalid required arguments')
@@ -8,19 +8,19 @@ export function toFit(
 
   let tick = false
 
-  return function() {
+  return function () {
     if (tick) {
       return
     }
 
     tick = true
     return requestAnimationFrame(() => {
-      if (dismissCondition()) {
+      if (dismissCondition) {
         tick = false
         return
       }
 
-      if (triggerCondition()) {
+      if (triggerCondition) {
         tick = false
         return cb()
       }

@@ -9,15 +9,8 @@ import { HOME_TITLE } from '../constants'
 import { useCategory } from '../hooks/useCategory'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
+import { useInfiniteScroll } from '../hooks/useInfiniteScroll'
 import { Layout } from '../layout'
-import * as Dom from '../utils/dom'
-import * as EventManager from '../utils/event-manager'
-
-const BASE_LINE = 80
-
-function getDistance(currentPos) {
-  return Dom.getDocumentHeight() - currentPos
-}
 
 export default ({ data, location }) => {
   const { siteMetadata } = data.site
@@ -27,25 +20,7 @@ export default ({ data, location }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory()
   useIntersectionObserver()
-
-  useEffect(() => {
-    window.addEventListener(`scroll`, onScroll, { passive: false })
-    return () => {
-      window.removeEventListener(`scroll`, onScroll, { passive: false })
-    }
-  }, [])
-
-  const onScroll = () => {
-    const currentPos = window.scrollY + window.innerHeight
-    const isTriggerPos = () => getDistance(currentPos) < BASE_LINE
-    const doesNeedMore = () =>
-      posts.length > countRef.current * countOfInitialPost
-
-    return EventManager.toFit(increaseCount, {
-      dismissCondition: () => !isTriggerPos(),
-      triggerCondition: () => isTriggerPos() && doesNeedMore(),
-    })()
-  }
+  useInfiniteScroll(increaseCount, () => posts.length > countRef.current * countOfInitialPost)
 
   return (
     <Layout location={location} title={siteMetadata.title}>
