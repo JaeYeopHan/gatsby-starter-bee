@@ -1,22 +1,18 @@
-import React, { useState, useEffect, useRef } from 'react'
 import { graphql } from 'gatsby'
 import _ from 'lodash'
-
-import { Layout } from '../layout'
+import React, { useEffect } from 'react'
 import { Bio } from '../components/bio'
-import { Head } from '../components/head'
 import { Category } from '../components/category'
 import { Contents } from '../components/contents'
-
-import * as ScrollManager from '../utils/scroll'
-import * as EventManager from '../utils/event-manager'
-import * as Dom from '../utils/dom'
-import { useRenderedCount } from '../hooks/useRenderedCount'
+import { Head } from '../components/head'
+import { HOME_TITLE } from '../constants'
+import { useCategory } from '../hooks/useCategory'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
+import { useRenderedCount } from '../hooks/useRenderedCount'
+import { Layout } from '../layout'
+import * as Dom from '../utils/dom'
+import * as EventManager from '../utils/event-manager'
 
-import { HOME_TITLE, CATEGORY_TYPE } from '../constants'
-
-const DEST_POS = 316
 const BASE_LINE = 80
 
 function getDistance(currentPos) {
@@ -24,19 +20,10 @@ function getDistance(currentPos) {
 }
 
 export default ({ data, location }) => {
-  const [category, setCategory] = useState(CATEGORY_TYPE.ALL)
-
   const { siteMetadata } = data.site
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
-
-  useEffect(() => {
-    ScrollManager.init()
-    return () => {
-      ScrollManager.destroy()
-    }
-  }, [])
 
   useEffect(() => {
     window.addEventListener(`scroll`, onScroll, { passive: false })
@@ -46,13 +33,8 @@ export default ({ data, location }) => {
   }, [])
 
   const [count, countRef, increaseCount] = useRenderedCount()
+  const [category, selectCategory] = useCategory()
   useIntersectionObserver()
-
-  const selectCategory = category => {
-    setCategory(category)
-    ScrollManager.go(DEST_POS)
-    window.history.pushState({ category }, '', `?category=${category}`)
-  }
 
   const onScroll = () => {
     const currentPos = window.scrollY + window.innerHeight
