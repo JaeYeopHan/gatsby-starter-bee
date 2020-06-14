@@ -9,10 +9,10 @@ import { Category } from '../components/category'
 import { Contents } from '../components/contents'
 
 import * as ScrollManager from '../utils/scroll'
-import * as IOManager from '../utils/visible'
 import * as EventManager from '../utils/event-manager'
 import * as Dom from '../utils/dom'
 import { useRenderedCount } from '../hooks/useRenderedCount'
+import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 
 import { HOME_TITLE, CATEGORY_TYPE } from '../constants'
 
@@ -45,18 +45,8 @@ export default ({ data, location }) => {
     }
   }, [])
 
-  useEffect(() => {
-    IOManager.init()
-    return () => {
-      IOManager.destroy()
-    }
-  }, [])
-
-  useEffect(() => {
-    IOManager.refreshObserver()
-  })
-
   const [count, countRef, increaseCount] = useRenderedCount()
+  useIntersectionObserver()
 
   const selectCategory = category => {
     setCategory(category)
