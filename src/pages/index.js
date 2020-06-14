@@ -24,6 +24,9 @@ export default ({ data, location }) => {
   const { countOfInitialPost } = siteMetadata.configs
   const posts = data.allMarkdownRemark.edges
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
+  const [count, countRef, increaseCount] = useRenderedCount()
+  const [category, selectCategory] = useCategory()
+  useIntersectionObserver()
 
   useEffect(() => {
     window.addEventListener(`scroll`, onScroll, { passive: false })
@@ -31,10 +34,6 @@ export default ({ data, location }) => {
       window.removeEventListener(`scroll`, onScroll, { passive: false })
     }
   }, [])
-
-  const [count, countRef, increaseCount] = useRenderedCount()
-  const [category, selectCategory] = useCategory()
-  useIntersectionObserver()
 
   const onScroll = () => {
     const currentPos = window.scrollY + window.innerHeight
