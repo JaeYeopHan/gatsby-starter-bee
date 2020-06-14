@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby'
 import _ from 'lodash'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Bio } from '../components/bio'
 import { Category } from '../components/category'
 import { Contents } from '../components/contents'
@@ -19,6 +19,7 @@ export default ({ data, location }) => {
   const categories = _.uniq(posts.map(({ node }) => node.frontmatter.category))
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory()
+
   useIntersectionObserver()
   useInfiniteScroll(increaseCount, () => posts.length > countRef.current * countOfInitialPost)
 
