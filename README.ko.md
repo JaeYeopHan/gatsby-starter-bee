@@ -58,6 +58,7 @@ In this template...
       <li>< Taenylog />: https://taeny.dev/</li>
       <li>brouk's devlog: https://brouk-devlog.netlify.com/</li>
       <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
+      <li>DevRappers.dev: https://devrappers.dev/</li>
     </ul>
   </p>
 </details>

@@ -61,6 +61,7 @@ In this template...
       <li>brouk's devlog: https://brouk-devlog.netlify.com/</li>
       <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
       <li>Garima's Tech Blog: https://garimasingh.netlify.app/ </li>
+      <li>DevRappers.dev: https://devrappers.dev/</li>
     </ul>
   </p>
 </details>
