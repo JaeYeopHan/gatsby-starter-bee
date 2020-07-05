@@ -45,6 +45,7 @@
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.13",
     "smooth-scroll": "^16.0.0",
+    "smoothscroll-polyfill": "^0.4.4",
     "typeface-catamaran": "0.0.54",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
