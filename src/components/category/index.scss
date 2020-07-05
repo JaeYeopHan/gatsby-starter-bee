@@ -36,3 +36,12 @@
 .category-container::-webkit-scrollbar {
   display: none; // Safari and Chrome
 }
+
+.category-container {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  .my-smooth-container {
+    scroll-behavior: auto;
+  }
+}
