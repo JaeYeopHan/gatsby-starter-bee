@@ -1,8 +1,10 @@
 import SmoothScroll from 'smooth-scroll/dist/smooth-scroll.min'
+import smoothscroll from 'smoothscroll-polyfill';
 
 let scroll
 
 export function init() {
+  smoothscroll.polyfill()
   scroll = new SmoothScroll('a[href*="#"]', {
     speed: 500,
     speedAsDuration: true,
