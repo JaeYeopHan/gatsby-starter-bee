@@ -62,6 +62,7 @@ In this template...
       <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
       <li>Garima's Tech Blog: https://garimasingh.netlify.app/ </li>
       <li>DevRappers.dev: https://devrappers.dev/</li>
+      <li>Let's doodle: https://duduling-blog.netlify.app/</li>
     </ul>
   </p>
 </details>
