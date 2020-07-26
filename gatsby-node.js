@@ -68,3 +68,28 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      thumbnail: Thumbnail
+    }
+
+    type Thumbnail {
+      childImageSharp: ChildImageSharp
+    }
+
+    type ChildImageSharp {
+      fixed(width: Int): Fixed
+    }
+
+    type Fixed {
+      src: String
+    }
+  `
+  createTypes(typeDefs)
+}
