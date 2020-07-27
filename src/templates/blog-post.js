@@ -24,7 +24,7 @@ export default ({ data, pageContext, location }) => {
     return () => ScrollManager.destroy()
   }, [])
 
-  const { markdownRemark: post } = data.markdownRemark
+  const { markdownRemark: post } = data
   const metaData = data.site.siteMetadata
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
