@@ -64,7 +64,7 @@ In this template...
       <li>DevRappers.dev: https://devrappers.dev/</li>
       <li>Let's doodle: https://duduling-blog.netlify.app/</li>
       <li>noopy.dev: https://noopy.dev/</li>
-	  <li>Hong_Devlog: https://hong-dev.github.io/</li>
+      <li>Hong_Devlog: https://hong-dev.github.io/</li>
     </ul>
   </p>
 </details>
