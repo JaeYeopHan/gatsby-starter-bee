@@ -63,6 +63,9 @@ In this template...
       <li>Garima's Tech Blog: https://garimasingh.netlify.app/ </li>
       <li>DevRappers.dev: https://devrappers.dev/</li>
       <li>Let's doodle: https://duduling-blog.netlify.app/</li>
+      <li>noopy.dev: https://noopy.dev/</li>
+      <li>Hong_Devlog: https://hong-dev.github.io/</li>
+      <li>samsara-ku's devlog: https://samsara-ku.dev/</li>
     </ul>
   </p>
 </details>
