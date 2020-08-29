@@ -29,9 +29,12 @@ export default ({ data, pageContext, location }) => {
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
   const { title: postTitle, date, thumbnail } = post.frontmatter
-  const thumbnailSrc = (thumbnail != null && thumbnail.childImageSharp != null && thumbnail.childImageSharp.fixed != null)
-    ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
-    : undefined
+  const thumbnailSrc =
+    thumbnail != null &&
+    thumbnail.childImageSharp != null &&
+    thumbnail.childImageSharp.fixed != null
+      ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
+      : undefined
 
   return (
     <Layout location={location} title={title}>
