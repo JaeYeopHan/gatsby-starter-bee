@@ -68,6 +68,7 @@ In this template...
       <li>samsara-ku's devlog: https://samsara-ku.dev/</li>
       <li>sundo.kim: https://sundo.kim/</li>
       <li>knou blog: https://bangtong.in/</li>
+      <li>cereme.dev: https://cereme.dev</li>
     </ul>
   </p>
 </details>
