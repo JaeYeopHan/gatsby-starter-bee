@@ -65,6 +65,7 @@ In this template...
       <li>sundo.kim: https://sundo.kim/</li>
       <li>Juunone's devlog: https://juunone.netlify.app/</li>
       <li>cereme.dev: https://cereme.dev</li>
+      <li>taekki.dev: https://taekki.dev</li>
     </ul>
   </p>
 </details>
