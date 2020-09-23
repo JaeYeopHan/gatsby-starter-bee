@@ -69,6 +69,7 @@ In this template...
       <li>sundo.kim: https://sundo.kim/</li>
       <li>knou blog: https://bangtong.in/</li>
       <li>cereme.dev: https://cereme.dev</li>
+      <li>taekki.dev: https://taekki.dev</li>
     </ul>
   </p>
 </details>
