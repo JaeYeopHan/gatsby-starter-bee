@@ -66,6 +66,7 @@ In this template...
       <li>Juunone's devlog: https://juunone.netlify.app/</li>
       <li>cereme.dev: https://cereme.dev</li>
       <li>taekki.dev: https://taekki.dev</li>
+      <li>kkh913's Developer Blog: https://kkh913.github.io</li>
     </ul>
   </p>
 </details>
