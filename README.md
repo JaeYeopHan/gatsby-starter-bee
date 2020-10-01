@@ -70,6 +70,7 @@ In this template...
       <li>knou blog: https://bangtong.in/</li>
       <li>cereme.dev: https://cereme.dev</li>
       <li>taekki.dev: https://taekki.dev</li>
+      <li>kkh913's Developer Blog: https://kkh913.github.io</li>
     </ul>
   </p>
 </details>
