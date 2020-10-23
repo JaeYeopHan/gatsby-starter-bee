@@ -72,6 +72,7 @@ In this template...
       <li>taekki.dev: https://taekki.dev</li>
       <li>kkh913's Developer Blog: https://kkh913.github.io</li>
       <li>Merrily, Code: https://merrily-code.netlify.app/</li>
+      <li>jeeneee's devlog: https://jeeneee.dev</li>
     </ul>
   </p>
 </details>
