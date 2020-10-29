@@ -68,6 +68,7 @@ In this template...
       <li>taekki.dev: https://taekki.dev</li>
       <li>kkh913's Developer Blog: https://kkh913.github.io</li>
       <li>jeeneee's devlog: https://jeeneee.dev</li>
+      <li>KSP Blog: https://ksp.now.sh</li>
     </ul>
   </p>
 </details>
