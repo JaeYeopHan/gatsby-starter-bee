@@ -73,6 +73,7 @@ In this template...
       <li>kkh913's Developer Blog: https://kkh913.github.io</li>
       <li>Merrily, Code: https://merrily-code.netlify.app/</li>
       <li>jeeneee's devlog: https://jeeneee.dev</li>
+      <li>Noah's devlog: https://noah0316.github.io/</li>
     </ul>
   </p>
 </details>
