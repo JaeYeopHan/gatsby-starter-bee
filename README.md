@@ -74,6 +74,7 @@ In this template...
       <li>Merrily, Code: https://merrily-code.netlify.app/</li>
       <li>jeeneee's devlog: https://jeeneee.dev</li>
       <li>Noah's devlog: https://noah0316.github.io/</li>
+      <li>bobs log: https://undefine.me</li>
     </ul>
   </p>
 </details>
