@@ -69,6 +69,7 @@ In this template...
       <li>kkh913's Developer Blog: https://kkh913.github.io</li>
       <li>jeeneee's devlog: https://jeeneee.dev</li>
       <li>KSP Blog: https://ksp.now.sh</li>
+      <li>bobs log: https://undefine.me</li>
     </ul>
   </p>
 </details>
