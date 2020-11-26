@@ -75,6 +75,7 @@ In this template...
       <li>jeeneee's devlog: https://jeeneee.dev</li>
       <li>Noah's devlog: https://noah0316.github.io/</li>
       <li>bobs log: https://undefine.me</li>
+      <li>irosyadi: https://irosyadi.netlify.app</li>
     </ul>
   </p>
 </details>
