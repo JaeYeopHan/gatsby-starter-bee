@@ -66,7 +66,7 @@ In this template...
       <li>noopy.dev: https://noopy.dev/</li>
       <li>Hong_Devlog: https://hong-dev.github.io/</li>
       <li>samsara-ku's devlog: https://samsara-ku.dev/</li>
-      <li>sundo.kim: https://sundo.kim/</li>
+      <li>qooo.io: https://qooo.io/</li>
       <li>knou blog: https://bangtong.in/</li>
       <li>cereme.dev: https://cereme.dev</li>
       <li>taekki.dev: https://taekki.dev</li>
