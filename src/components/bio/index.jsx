@@ -33,7 +33,7 @@ export const Bio = () => (
                     <a href={`https://github.com/${social.github}`}>GitHub</a>
                   )}
                   {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
+                    <a href={`https://${social.medium}.medium.com`}>Medium</a>
                   )}
                   {social.twitter && (
                     <a href={`https://twitter.com/${social.twitter}`}>
