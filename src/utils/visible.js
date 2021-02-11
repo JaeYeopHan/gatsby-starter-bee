@@ -36,7 +36,8 @@ export function init() {
 }
 
 export function destroy() {
-  return disconnect().then(() => (observer = null))
+  disconnect()
+  observer = null
 }
 
 export function refreshObserver() {
