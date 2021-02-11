@@ -11,7 +11,7 @@ Just follow `ISSUE_TEMPLATE`. done!
 This repository managed based on forked pull request strategy
 
 ```sh
-# Fort this repository to yours.
+# Fork this repository to yours.
 $ git clone [YOUR_REPOSITORY_URL]
 $ cd gatsby-starter-bee
 
@@ -46,4 +46,3 @@ Consider starting the commit message with an applicable emoji:
 ### Thanks!
 
 > I'm waiting for your pull request. :pray:
-
