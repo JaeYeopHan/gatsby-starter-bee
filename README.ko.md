@@ -70,6 +70,7 @@ In this template...
       <li>jeeneee's devlog: https://jeeneee.dev</li>
       <li>KSP Blog: https://ksp.now.sh</li>
       <li>bobs log: https://undefine.me</li>
+      <li>Jane's PS Blog: https://janeljs.github.io</li>
     </ul>
   </p>
 </details>
