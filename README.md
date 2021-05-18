@@ -77,6 +77,7 @@ In this template...
       <li>irosyadi: https://irosyadi.netlify.app</li>
       <li>yujolog: https://yujo11.github.io/</li>
       <li>hexdrinker's devlog: https://hexdrinker.dev</li>
+      <li>gparkki.io: https://gparkkii.github.io/</li>
     </ul>
   </p>
 </details>
