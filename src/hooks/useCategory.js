@@ -3,10 +3,11 @@ import qs from 'query-string'
 import { CATEGORY_TYPE } from '../constants'
 import * as ScrollManager from '../utils/scroll'
 
-const DEST_POS = 316
+let DEST_POS
 
-export function useCategory() {
+export function useCategory(DEST) {
   const [category, setCategory] = useState(CATEGORY_TYPE.ALL)
+  DEST_POS = DEST
   const adjustScroll = () => {
     if (window.scrollY > DEST_POS) {
       ScrollManager.go(DEST_POS)
