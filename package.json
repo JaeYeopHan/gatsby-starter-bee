@@ -37,7 +37,7 @@
     "intersection-observer": "^0.5.1",
     "katex": "^0.11.1",
     "lodash": "^4.17.21",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.25.0",
     "query-string": "^6.13.1",
     "react": "^16.8.1",
