@@ -189,6 +189,7 @@ src/styles
 - Profile image! (replace file in `/content/assets/profile.png`)
 - Favicon image! (replace file in `/content/assets/felog.png`)
 - Header gradient! (\$theme-gradient `/styles/variables.scss`)
+- Please set it up for update to the domain distributed in 'robots.txt'! (replace part `https://your-blog.netlify.app` of `gatsby-config.js`)
 - Utterances repository! (replace repository address in `/gatsby-meta-config.js`)
   - ⚠️ Please check, this guide(<https://utteranc.es/>)
 
